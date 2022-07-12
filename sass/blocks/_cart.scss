@@ -1,0 +1,33 @@
+.cart {
+    width: 449px;
+    padding: 83px 50px;
+
+    background-color: #1F1B42;
+    border-radius: 40px;
+
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.2s ease-in;
+    img {
+        + * {
+            margin-top: 13px;
+        }
+    }
+}
+.cart:hover {
+    box-shadow: 0 0 10px 6px rgba(59, 51, 126, 0.573);  
+}
+.cart:before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px; 
+    padding: 2px; 
+    background: linear-gradient(90deg, #00F0FF, #5773FF, #FF007A); 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}

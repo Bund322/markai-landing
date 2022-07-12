@@ -1,0 +1,18 @@
+.section-2 {
+    max-width: 1391px;
+    padding: 70px 0;
+}
+.section-2__header {
+    p {
+        max-width: 601px;
+    }   
+    + * {
+        margin-top: 58px;
+    }
+}
+.section-2__content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 22px;
+    row-gap: 22px;
+}

@@ -1,0 +1,15 @@
+.section-1 {
+    padding: 80px 0;
+}
+.section-1__container {
+    display: flex;
+    align-items: center;
+    img {
+        + * {
+            margin-left: 86px;
+        }
+    }
+    h4 {
+        max-width: 733px;
+    }
+}

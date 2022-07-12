@@ -1,0 +1,24 @@
+.button {
+    position: relative;
+    padding: 6px 23px;
+    border-radius: 50px;
+
+    transition: .2s ease-in;
+}
+.button:hover {
+    box-shadow: 0 0 10px 6px rgba(59, 51, 126, 0.573);  
+}
+.button:before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px; 
+    padding: 2px; 
+    background: linear-gradient(90deg, #00F0FF, #5773FF, #FF007A); 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}
