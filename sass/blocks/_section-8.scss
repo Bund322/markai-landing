@@ -1,0 +1,117 @@
+.section-8 {
+    padding-top: 70px;
+    padding-bottom: 150px;
+    max-width: 1123px;
+    width: 100%;
+}
+
+.section-8__container {
+    
+}
+
+.section-8__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p {
+        max-width: 608px;
+    }
+    + * {
+        margin-top: 55px;
+    }
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__top {
+    display: flex;
+    column-gap: 31px;
+    width: 100%;
+
+    + * {
+        margin-top: 31px;
+    }
+}
+
+.contact-us__bot {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-name, .input-email {
+    max-width: 538px;
+    width: 100%;
+    position: relative;
+    padding: 1px 5px;
+    border-radius: 50px; 
+    input {
+        width: 100%;
+        padding: 26px 39px;
+
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color: #fff;
+        &::-webkit-input-placeholder {
+            font-weight: 400;
+            font-size: 16.9122px;
+            line-height: 21px;
+
+            color: #FAFAFA;
+        }
+    }
+}
+.input-name:hover, .input-email:hover, .input-message:hover {
+    box-shadow: 0 0 10px 6px rgba(59, 51, 126, 0.573);  
+}
+.input-name:before, .input-email:before, .input-message::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px; 
+    padding: 2px; 
+    background: linear-gradient(90deg, #00F0FF, #5773FF, #FF007A); 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}
+
+.input-message {
+    position: relative;
+    padding: 1px 5px;
+    border-radius: 50px; 
+    textarea {
+        width: 100%;
+        height: 200px;
+        padding: 26px 44px;
+
+        resize: none;
+
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color: #fff;
+        &::-webkit-input-placeholder {
+            font-weight: 400;
+            font-size: 16.9122px;
+            line-height: 21px;
+
+
+            color: #FAFAFA;
+        }
+    }
+}
+.contact-us__button {
+    margin: 0 auto;
+    margin-top: 42px;
+
+    max-width: 293px;
+    padding: 16px 95px;
+}
